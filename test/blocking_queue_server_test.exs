@@ -3,8 +3,9 @@
 # As values are put, they are added to an array. Any pops will cause immediate
 # dequeuing from this array.
 #
-# As values are popped, the popper is added ot an array. Any puts will cause immediate
-# dequeuing from this array and values will be delivered to waiting poppers.
+# As values are popped, the popper is added to an array. Any puts will cause
+# immediate dequeuing from this array and values will be delivered to waiting
+# poppers.
 #
 # In this way, the two arrays hold waiting items or waiting readers. At any
 # given point only one of these arrays should have any items.
