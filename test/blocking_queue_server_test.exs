@@ -105,7 +105,7 @@ defmodule BlockingQueueServerTest do
     spawn_link fn ->
       {:ok, "hello"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     :ok = BlockingQueueServer.put(queue, "hello")
   end
 
@@ -121,11 +121,11 @@ defmodule BlockingQueueServerTest do
     spawn_link fn ->
       {:ok, "hello"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     spawn_link fn ->
       {:ok, "world"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     :ok = BlockingQueueServer.put(queue, "hello")
     :ok = BlockingQueueServer.put(queue, "world")
   end
@@ -143,7 +143,7 @@ defmodule BlockingQueueServerTest do
     spawn_link fn ->
       {:ok, "hello"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     :ok = BlockingQueueServer.aput(queue, "hello")
   end
 
@@ -159,11 +159,11 @@ defmodule BlockingQueueServerTest do
     spawn_link fn ->
       {:ok, "hello"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     spawn_link fn ->
       {:ok, "world"} = BlockingQueueServer.pop(queue)
     end
-    wait
+    wait()
     :ok = BlockingQueueServer.aput(queue, "hello")
     :ok = BlockingQueueServer.aput(queue, "world")
   end
