@@ -14,7 +14,7 @@ script/test
 ```
 
 ## Useful Docs
-- [Standard Library](http://elixir-lang.org/docs/stable/elixir/Kernel.html)
+- [Standard Library](https://hexdocs.pm/elixir/Kernel.html)
 - [Processes](http://elixir-lang.org/getting-started/processes.html)
-- [ExUnit](http://elixir-lang.org/docs/stable/ex_unit/ExUnit.Case.html)
-- [GenServer](http://elixir-lang.org/docs/v1.2/elixir/GenServer.html), and Erlang's [gen_server](http://erlang.org/doc/man/gen_server.html) and [gen_server behavior](http://erlang.org/doc/design_principles/gen_server_concepts.html)
+- [ExUnit](https://hexdocs.pm/ex_unit/ExUnit.html)
+- [GenServer](https://hexdocs.pm/elixir/GenServer.html#content), and Erlang's [gen_server](http://erlang.org/doc/man/gen_server.html) and [gen_server behavior](http://erlang.org/doc/design_principles/gen_server_concepts.html)
